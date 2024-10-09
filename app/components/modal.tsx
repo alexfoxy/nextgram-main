@@ -25,10 +25,11 @@ export function Modal({ children, modalPath }: { children: React.ReactNode, moda
     }
   }, [])
 
+
   function onDismiss() {
     if (modalPath && window.history.length < 5) { // Need another way to detect this, do we need a path stack?
       const backPath = getBackPath(path, modalPath)
-      router.replace(backPath)
+      router.push(backPath)
     } else {
       router.back()
     }
