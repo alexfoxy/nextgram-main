@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { Modal } from './modal'
 
 export default function UserModal({

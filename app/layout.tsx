@@ -1,4 +1,5 @@
 import './global.css'
+import RouteListener from './RouteListener'
 
 export const metadata = {
   title: 'NextGram',
@@ -13,9 +14,9 @@ export default function RootLayout(props: {
   return (
     <html>
       <body>
+        {/* <RouteListener /> */}
         {props.children}
         {props.modal}
-        <div id="modal-root" />
       </body>
     </html>
   )
